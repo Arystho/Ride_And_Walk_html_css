@@ -1,0 +1,328 @@
+/* ---------- font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ---------- général ---------- */
+:root {
+    --black: #000000;
+    --blue: #1791C8;
+    --white: #FFFFFF;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--black);
+    font-family: var(--open-sans);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+ul {
+    list-style: none;
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: italic;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: italic;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: italic;
+    color: var(--white);
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+/* ---------- header ---------- */
+header {
+    background: var(--black);
+}
+
+header > div {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+#logo {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-style: italic;
+}
+
+#connect {
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--black);
+    padding: 8px 16px;
+    font-style: italic;
+    transition: all 0.3s ease;
+}
+
+#connect:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+/* ---------- main ---------- */
+/* _____Accueil section-1_____ */
+#section-1 .background-container {
+    background-image: url('/img/bike-in-forest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 596px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+#section1 .background-overlay{
+    position: absolute;
+    width: 100%;
+    height: 596px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#section-1 .container{
+    color: var(--white); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    gap: 30px;
+}
+#section-1 .nav-container{
+    background: var(--black);
+    
+}
+
+/* ______FAQ section-1____ */
+
+#faq-section{
+    background-image:url('/img/Back-FAQ.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#faq-section-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 100%; */
+    height: 100%
+}
+
+#faq-section .container{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    padding: 32px;
+    gap: 30px;
+}
+
+#faq-section .titles{
+    display: grid;
+    justify-items: center;
+    gap: 7px;
+}
+
+/* _____Connection/inscription section-1____ */
+#connexion{
+    height:100vh;
+}
+.background-connection{
+    background-image: url('/img/pexels-anastasia-shuraeva-8926961.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container{
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid var(--blue);
+    padding: 36px;
+    border-radius: 10px;
+    /* width: 300px; */
+    text-align: center;
+    height:fit-content;
+    margin:auto;
+}
+
+.login-container input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+}
+
+.login-container form p{
+    color: var(--white);
+    font-size: 12px;
+    text-align: left;
+}
+
+.login-container button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: var(--white);
+}
+
+.login-container button:hover{
+    background: var(--white);
+    color: var(--blue);
+}
+
+.login-container a{
+    color: var(--white);
+    font-size: 12px;
+}
+
+.login-container a:hover{
+    color: var(--blue);
+}
+
+.logo{
+    width: 125px;
+    /* margin-bottom: 20px; */
+}
+
+/* ---------- footer ---------- */
+footer {
+    background: var(--black);
+    padding: 32px;
+}
+
+footer > div {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    min-height: 120px;
+}
+
+footer nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer nav ul {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+footer nav ul li a {
+    color: var(--white);
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+
+    /* ---------- header ---------- */
+    header > div {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    footer > div {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* ---------- footer ---------- */
+    footer > div {
+        align-items: center;
+    }
+
+    footer nav {
+        position: static;
+        transform: none;
+        margin-top: 16px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* #footer-left h2 {
+        font-size: 28px;
+    }
+
+    #footer-left p {
+        font-size: 14px;
+    }
+
+    footer nav ul li a {
+        font-size: 14px;
+    } */
+}
