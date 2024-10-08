@@ -107,7 +107,7 @@ nav ul li a {
 }
 
 /* ---------- main ---------- */
-/* _____Accueil section-1_____ */
+/* ---------- Accueil ---------- */
 #section-1 .background-container {
     background-image: url('/img/bike-in-forest.jpg');
     background-size: cover;
@@ -160,7 +160,7 @@ nav ul li a {
     color: var(--black);
 }
 
-/* _____Accueil section-2____ */
+/* ---------- Destination ---------- */
 #section-2 {
     max-width: 1440px;
     margin: 0 auto;
@@ -234,7 +234,7 @@ nav ul li a {
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-/* ______FAQ section-1____ */
+/* ---------- FAQ ---------- */
 
 #faq-section{
     background-image:url('/img/Back-FAQ.jpg');
@@ -264,7 +264,7 @@ nav ul li a {
     gap: 7px;
 }
 
-/* _____Connection/inscription section-1____ */
+/*------------Connection------------*/
 #connexion{
     height:100vh;
 }
@@ -328,10 +328,397 @@ nav ul li a {
     color: var(--blue);
 }
 
+.forgot{
+    color: var(--white);
+    font-size: 12px;
+    display: flex;
+}
+
 .logo{
     width: 125px;
     /* margin-bottom: 20px; */
 }
+
+/* ---------- inscription ---------- */
+#inscription {
+    height: 100vh;
+}
+
+.background-inscription {
+    background-image: url('/img/pexels-anastasia-shuraeva-8926961.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid var(--blue);
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    margin: auto;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+}
+
+.signup-container form p {
+    color: var(--white);
+    font-size: 12px;
+    text-align: left;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: var(--white);
+}
+
+.signup-container button:hover {
+    background: var(--white);
+    color: var(--blue);
+}
+
+.signup-container a {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.signup-container a:hover {
+    color: var(--blue);
+}
+
+.logo {
+    width: 125px;
+}
+
+/* ---------- mot de passe oublie ---------- */
+
+#mot-de-passe-oublie {
+    height: 100vh;
+}
+
+.background-mdp-oublie {
+    background-image: url('/img/pexels-anastasia-shuraeva-8926961.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mdp-oublie-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid var(--blue);
+    padding: 36px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.mdp-oublie-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    box-sizing: border-box;
+}
+
+.mdp-oublie-container form p {
+    color: var(--white);
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.mdp-oublie-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mdp-oublie-container button:hover {
+    background: var(--white);
+    color: var(--blue);
+}
+
+.mdp-oublie-container a {
+    color: var(--white);
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mdp-oublie-container a:hover {
+    color: var(--blue);
+}
+
+.return{
+    color: var(--white);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo {
+    width: 125px;
+    max-width: 100%;
+    height: auto;
+}
+
+.mdp-oublie-container h2 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.mdp-oublie-container > p {
+    color: var(--white);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* ---------- validation email / validation password ---------- */
+
+#validation-email {
+    height: 100vh;
+}
+
+.background-validation {
+    background-image: url('/img/pexels-anastasia-shuraeva-8926961.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.validation-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid var(--blue);
+    padding: 36px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.validation-container h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.email-icon {
+    font-size: 48px;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+.validation-container p {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.validation-container .message {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.validation-container .spam-note {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.validation-container .resend {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.validation-container .resend-link {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.validation-container .resend-link:hover {
+    color: var(--white);
+}
+
+.return{
+    color: var(--white);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.logo {
+    width: 125px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* ---------- validation password ---------- */
+
+#validation-password {
+    height: 100vh;
+}
+
+.background-validation-password {
+    background-image: url('/img/pexels-anastasia-shuraeva-8926961.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.validation-container-password {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid var(--blue);
+    padding: 36px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.validation-container-password .message {
+    color: var(--white);
+    margin-bottom: 33px;
+}
+
+.logo {
+    width: 125px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.buttom-link {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttom-link:hover{
+    background: var(--white);
+    color: var(--blue);
+}
+
+/* ---------- new mot de passe ---------- */
+
+#inscription {
+    height: 100vh;
+}
+
+.background-inscription {
+    background-image: url('/pexels-anastasia-shuraeva-8926961.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 0.5px solid var(--blue);
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    margin: auto;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+}
+
+.signup-container form p {
+    color: var(--white);
+    font-size: 12px;
+    text-align: left;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: var(--white);
+}
+
+.signup-container button:hover {
+    background: var(--white);
+    color: var(--blue);
+}
+
+.signup-container a {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.signup-container a:hover {
+    color: var(--blue);
+}
+
+.logo {
+    width: 125px;
+}
+
+/* ---------- validation password ---------- */
 
 /* ---------- footer ---------- */
 footer {
@@ -368,52 +755,3 @@ footer nav ul li a {
     font-size: 16px;
 }
 
-/* ---------- Responsive Design ---------- */
-@media (max-width: 768px) {
-
-    /* ---------- header ---------- */
-    header > div {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
-    footer > div {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    /* ---------- footer ---------- */
-    footer > div {
-        align-items: center;
-    }
-
-    footer nav {
-        position: static;
-        transform: none;
-        margin-top: 16px;
-    }
-
-    footer nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
-    /* #footer-left h2 {
-        font-size: 28px;
-    }
-
-    #footer-left p {
-        font-size: 14px;
-    }
-
-    footer nav ul li a {
-        font-size: 14px;
-    } */
-}
